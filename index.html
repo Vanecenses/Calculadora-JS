@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Evenst</title> 
+    <style>
+        body { 
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: rgb(248, 231, 247);
+        }
+
+        
+        ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        span {
+            display: inline-flex;
+            font-size: 1rem;
+            margin-bottom: 0,5rem;
+        
+        } 
+        
+        .calcudoraContainer div {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem; 
+        }
+
+        
+        .calcudoraContainer button{
+            width: 100px;
+            background-color: rgb(240, 216, 233);
+        }
+        
+
+    </style>
+</head>
+<body>
+<h1> Mas pacticas y  eventos del dom</h1>
+<!-- <span>Resultado</span> -->
+<!-- <span id="resultado"></span> -->
+<!-- <button onclick={probando()}>Iniciar</button>++ -->
+
+<h2>Calculadora</h2>
+<div class="calcudoraContainer">
+    <ul>
+        <li>
+            <span>Esta calculadora solo puede hacer operaciones aritmeticas con dos numero</span>
+        </li>
+        <li>
+            <span>Solamente podra sumar,restar, multiplicar y dividir</span>
+        </li>
+        <li>
+            <span>El resultado lo veras en pantalla</span>
+        </li>
+    </ul>
+    <div>
+        <div>
+            <span>Tu resultado</span>
+            <span id="resultado"></span>
+        </div>
+        <button onclick={calculadora()}>Calcular</button>
+    </div>
+
+</div>
+<script src="./main.js"></script>
+    
+</body>
+</html>
